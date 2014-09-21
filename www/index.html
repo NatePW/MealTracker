@@ -16,6 +16,9 @@ else
   }
 xmlhttp.onreadystatechange=function()
   {
+    xmlhttp.open("GET","https://insidecbu.calbaptist.edu/ics",true);
+    xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xmlhttp.send("userName=477088&password=Icandrive@18&btnLogin=Login");
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
     txt="<table border='1'><tr><th>Time</th><th>Location</th></tr>";
